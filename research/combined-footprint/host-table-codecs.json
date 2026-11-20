@@ -1,0 +1,65 @@
+{
+ "token-table.bf16": {
+  "rows": 262144,
+  "cols": 512,
+  "raw_bytes": 268435456,
+  "hi_entropy_bits": 2.640552939976099,
+  "lo_entropy_bits": 7.968789703772437,
+  "order0_bound_bytes": 177995233,
+  "zstd9_planes_chunk16": {
+   "bytes": 185558899,
+   "ratio": 0.6912607662379742,
+   "encode_s": 6.54,
+   "verified_chunks": 157,
+   "mean_chunk_decode_us": 36.9
+  },
+  "zstd9_planes_chunk64": {
+   "bytes": 184135098,
+   "ratio": 0.6859566941857338,
+   "encode_s": 4.63,
+   "verified_chunks": 43,
+   "mean_chunk_decode_us": 76.7
+  },
+  "zstd19_planes_chunk64": {
+   "bytes": 175907847,
+   "ratio": 0.6553077958524227,
+   "encode_s": 33.08,
+   "verified_chunks": 43,
+   "mean_chunk_decode_us": 63.0
+  }
+ },
+ "vision-host/position-table.bf16": {
+  "rows": 20480,
+  "cols": 768,
+  "raw_bytes": 31457280,
+  "hi_entropy_bits": 4.557110995212636,
+  "lo_entropy_bits": 7.970203671050134,
+  "order0_bound_bytes": 24629702,
+  "zstd9_planes_chunk16": {
+   "bytes": 22811353,
+   "ratio": 0.725153382619222,
+   "encode_s": 0.38,
+   "verified_chunks": 15,
+   "mean_chunk_decode_us": 33.4
+  },
+  "zstd9_planes_chunk64": {
+   "bytes": 22180057,
+   "ratio": 0.705085023244222,
+   "encode_s": 0.3,
+   "verified_chunks": 4,
+   "mean_chunk_decode_us": 88.1
+  },
+  "zstd19_planes_chunk64": {
+   "bytes": 21301392,
+   "ratio": 0.6771530151367188,
+   "encode_s": 3.49,
+   "verified_chunks": 4,
+   "mean_chunk_decode_us": 123.3
+  }
+ },
+ "tokenizer.json": {
+  "zstd9": 4790786,
+  "zstd19": 3923175,
+  "raw_bytes": 32170510
+ }
+}

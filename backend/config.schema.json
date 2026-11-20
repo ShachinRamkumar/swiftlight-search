@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Spotlight FSearch backend configuration",
+  "type": "object",
+  "required": ["home", "helper", "index"],
+  "properties": {
+    "home": {"type": "string"},
+    "helper": {"type": "string"},
+    "index": {"type": "string"},
+    "auto_index": {"type": "boolean", "default": true},
+    "excluded": {"type": "array", "items": {"type": "string"}, "default": []},
+    "semantic_modalities": {"type": ["array", "null"], "items": {"enum": ["text", "image", "audio", "video"]}, "default": null},
+    "embedding": {
+      "type": ["object", "null"], "default": null,
+      "description": "Core AI is the only embedding engine. Omitted or null embedding disables semantic search for custom configurations.",
+      "properties": {
+        "engine": {"enum": ["coreai"], "default": "coreai"},
+        "runtime": {"type": ["string", "null"], "default": null, "description": "Null selects ~/Library/Application Support/Swiftlight/CoreAI/coreai-eg2-v1."},
+        "model_key": {"type": ["string", "null"], "default": null, "description": "Required for query selection before activation. Production uses coreai-eg2-v1."},
+        "image_vectors": {"enum": ["legacy", "coreai"], "default": "legacy"},
+        "audio_vectors": {"enum": ["legacy", "coreai"], "default": "legacy"},
+        "video_clip_vectors": {"type": "boolean", "default": false},
+        "index_audio": {"type": "boolean", "default": false},
+        "index_video": {"type": "boolean", "default": false},
+        "pause_indexing_while_searching": {"type": "boolean", "default": false},
+        "allow_incomplete": {"type": "boolean", "default": false, "description": "Verification only. Never enable for production cutover."}
+      },
+      "additionalProperties": false
+    }
+  }
+}

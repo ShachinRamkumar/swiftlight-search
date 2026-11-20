@@ -1,0 +1,3118 @@
+{
+  "audit": {
+    "sqlite": "3.53.4",
+    "pragmas": {
+      "page_size": 16384,
+      "page_count": 17247,
+      "freelist_count": 1320,
+      "auto_vacuum": 2,
+      "journal_mode": "wal"
+    },
+    "objects": [
+      {
+        "name": "fts_data",
+        "pages": 3732,
+        "bytes": 61145088,
+        "payload": 60264163,
+        "unused": 653069,
+        "overflow_pages": 0
+      },
+      {
+        "name": "fts_content",
+        "pages": 3660,
+        "bytes": 59965440,
+        "payload": 55724838,
+        "unused": 3948653,
+        "overflow_pages": 30
+      },
+      {
+        "name": "embedding_inputs",
+        "pages": 2848,
+        "bytes": 46661632,
+        "payload": 42807992,
+        "unused": 3623899,
+        "overflow_pages": 0
+      },
+      {
+        "name": "vectors",
+        "pages": 2745,
+        "bytes": 44974080,
+        "payload": 42103827,
+        "unused": 2730921,
+        "overflow_pages": 0
+      },
+      {
+        "name": "segments",
+        "pages": 2640,
+        "bytes": 43253760,
+        "payload": 41773159,
+        "unused": 1192747,
+        "overflow_pages": 0
+      },
+      {
+        "name": "sqlite_autoindex_embedding_inputs_1",
+        "pages": 77,
+        "bytes": 1261568,
+        "payload": 1107482,
+        "unused": 73369,
+        "overflow_pages": 0
+      },
+      {
+        "name": "files",
+        "pages": 55,
+        "bytes": 901120,
+        "payload": 808769,
+        "unused": 65139,
+        "overflow_pages": 0
+      },
+      {
+        "name": "sqlite_autoindex_files_1",
+        "pages": 40,
+        "bytes": 655360,
+        "payload": 507907,
+        "unused": 132809,
+        "overflow_pages": 0
+      },
+      {
+        "name": "fts_idx",
+        "pages": 29,
+        "bytes": 475136,
+        "payload": 299850,
+        "unused": 118083,
+        "overflow_pages": 0
+      },
+      {
+        "name": "fts_docsize",
+        "pages": 29,
+        "bytes": 475136,
+        "payload": 233366,
+        "unused": 41331,
+        "overflow_pages": 0
+      },
+      {
+        "name": "segments_file",
+        "pages": 28,
+        "bytes": 458752,
+        "payload": 295404,
+        "unused": 52877,
+        "overflow_pages": 0
+      },
+      {
+        "name": "vectors_segment",
+        "pages": 18,
+        "bytes": 294912,
+        "payload": 181355,
+        "unused": 33548,
+        "overflow_pages": 0
+      },
+      {
+        "name": "files_state",
+        "pages": 6,
+        "bytes": 98304,
+        "payload": 60009,
+        "unused": 25600,
+        "overflow_pages": 0
+      },
+      {
+        "name": "files_inode",
+        "pages": 6,
+        "bytes": 98304,
+        "payload": 60086,
+        "unused": 25523,
+        "overflow_pages": 0
+      },
+      {
+        "name": "sqlite_schema",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 8875,
+        "unused": 7205,
+        "overflow_pages": 0
+      },
+      {
+        "name": "sqlite_autoindex_meta_1",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 182,
+        "unused": 16167,
+        "overflow_pages": 0
+      },
+      {
+        "name": "sqlite_autoindex_embedding_models_1",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 34,
+        "unused": 16336,
+        "overflow_pages": 0
+      },
+      {
+        "name": "meta",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 400,
+        "unused": 15939,
+        "overflow_pages": 0
+      },
+      {
+        "name": "fts_config",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 11,
+        "unused": 16362,
+        "overflow_pages": 0
+      },
+      {
+        "name": "embedding_models",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 571,
+        "unused": 15795,
+        "overflow_pages": 0
+      },
+      {
+        "name": "embedding_modality_identities",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 150,
+        "unused": 16220,
+        "overflow_pages": 0
+      },
+      {
+        "name": "embedding_failures",
+        "pages": 1,
+        "bytes": 16384,
+        "payload": 0,
+        "unused": 16376,
+        "overflow_pages": 0
+      }
+    ],
+    "tables": {
+      "meta": {
+        "rows": 9,
+        "columns": {
+          "key": {
+            "nonnull": 9,
+            "text_blob_bytes": 147,
+            "integers": 0,
+            "reals": 0
+          },
+          "value": {
+            "nonnull": 9,
+            "text_blob_bytes": 224,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "files": {
+        "rows": 4209,
+        "columns": {
+          "id": {
+            "nonnull": 4209,
+            "text_blob_bytes": 0,
+            "integers": 4209,
+            "reals": 0
+          },
+          "path": {
+            "nonnull": 4209,
+            "text_blob_bytes": 481659,
+            "integers": 0,
+            "reals": 0
+          },
+          "kind": {
+            "nonnull": 4209,
+            "text_blob_bytes": 15727,
+            "integers": 0,
+            "reals": 0
+          },
+          "size": {
+            "nonnull": 4209,
+            "text_blob_bytes": 0,
+            "integers": 4209,
+            "reals": 0
+          },
+          "mtime": {
+            "nonnull": 4209,
+            "text_blob_bytes": 0,
+            "integers": 0,
+            "reals": 4209
+          },
+          "inode": {
+            "nonnull": 4209,
+            "text_blob_bytes": 0,
+            "integers": 4209,
+            "reals": 0
+          },
+          "device": {
+            "nonnull": 4209,
+            "text_blob_bytes": 0,
+            "integers": 4209,
+            "reals": 0
+          },
+          "state": {
+            "nonnull": 4209,
+            "text_blob_bytes": 17868,
+            "integers": 0,
+            "reals": 0
+          },
+          "detail": {
+            "nonnull": 345,
+            "text_blob_bytes": 5966,
+            "integers": 0,
+            "reals": 0
+          },
+          "info": {
+            "nonnull": 3864,
+            "text_blob_bytes": 122332,
+            "integers": 0,
+            "reals": 0
+          },
+          "indexed_at": {
+            "nonnull": 4209,
+            "text_blob_bytes": 0,
+            "integers": 0,
+            "reals": 4209
+          }
+        }
+      },
+      "segments": {
+        "rows": 36713,
+        "columns": {
+          "id": {
+            "nonnull": 36713,
+            "text_blob_bytes": 0,
+            "integers": 36713,
+            "reals": 0
+          },
+          "file": {
+            "nonnull": 36713,
+            "text_blob_bytes": 0,
+            "integers": 36713,
+            "reals": 0
+          },
+          "kind": {
+            "nonnull": 36713,
+            "text_blob_bytes": 177711,
+            "integers": 0,
+            "reals": 0
+          },
+          "modality": {
+            "nonnull": 36713,
+            "text_blob_bytes": 149300,
+            "integers": 0,
+            "reals": 0
+          },
+          "loc": {
+            "nonnull": 30554,
+            "text_blob_bytes": 0,
+            "integers": 0,
+            "reals": 30554
+          },
+          "loc_end": {
+            "nonnull": 0,
+            "text_blob_bytes": 0,
+            "integers": 0,
+            "reals": 0
+          },
+          "excerpt": {
+            "nonnull": 31390,
+            "text_blob_bytes": 7348099,
+            "integers": 0,
+            "reals": 0
+          },
+          "vec": {
+            "nonnull": 21874,
+            "text_blob_bytes": 33598464,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "fts_data": {
+        "rows": 15376,
+        "columns": {
+          "id": {
+            "nonnull": 15376,
+            "text_blob_bytes": 0,
+            "integers": 15376,
+            "reals": 0
+          },
+          "block": {
+            "nonnull": 15376,
+            "text_blob_bytes": 60203106,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "fts_idx": {
+        "rows": 18953,
+        "columns": {
+          "segid": {
+            "nonnull": 18953,
+            "text_blob_bytes": 0,
+            "integers": 18953,
+            "reals": 0
+          },
+          "term": {
+            "nonnull": 18953,
+            "text_blob_bytes": 171763,
+            "integers": 0,
+            "reals": 0
+          },
+          "pgno": {
+            "nonnull": 18953,
+            "text_blob_bytes": 0,
+            "integers": 18953,
+            "reals": 0
+          }
+        }
+      },
+      "fts_content": {
+        "rows": 34687,
+        "columns": {
+          "id": {
+            "nonnull": 34687,
+            "text_blob_bytes": 0,
+            "integers": 34687,
+            "reals": 0
+          },
+          "c0": {
+            "nonnull": 34687,
+            "text_blob_bytes": 111320,
+            "integers": 0,
+            "reals": 0
+          },
+          "c1": {
+            "nonnull": 34687,
+            "text_blob_bytes": 49747119,
+            "integers": 0,
+            "reals": 0
+          },
+          "c2": {
+            "nonnull": 3398,
+            "text_blob_bytes": 5656984,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "fts_docsize": {
+        "rows": 34687,
+        "columns": {
+          "id": {
+            "nonnull": 34687,
+            "text_blob_bytes": 0,
+            "integers": 34687,
+            "reals": 0
+          },
+          "sz": {
+            "nonnull": 34687,
+            "text_blob_bytes": 129305,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "fts_config": {
+        "rows": 1,
+        "columns": {
+          "k": {
+            "nonnull": 1,
+            "text_blob_bytes": 7,
+            "integers": 0,
+            "reals": 0
+          },
+          "v": {
+            "nonnull": 1,
+            "text_blob_bytes": 0,
+            "integers": 1,
+            "reals": 0
+          }
+        }
+      },
+      "embedding_models": {
+        "rows": 2,
+        "columns": {
+          "id": {
+            "nonnull": 2,
+            "text_blob_bytes": 0,
+            "integers": 2,
+            "reals": 0
+          },
+          "key": {
+            "nonnull": 2,
+            "text_blob_bytes": 27,
+            "integers": 0,
+            "reals": 0
+          },
+          "model": {
+            "nonnull": 2,
+            "text_blob_bytes": 54,
+            "integers": 0,
+            "reals": 0
+          },
+          "weights_sha256": {
+            "nonnull": 1,
+            "text_blob_bytes": 64,
+            "integers": 0,
+            "reals": 0
+          },
+          "build": {
+            "nonnull": 2,
+            "text_blob_bytes": 104,
+            "integers": 0,
+            "reals": 0
+          },
+          "prompts": {
+            "nonnull": 2,
+            "text_blob_bytes": 59,
+            "integers": 0,
+            "reals": 0
+          },
+          "preprocessing": {
+            "nonnull": 2,
+            "text_blob_bytes": 180,
+            "integers": 0,
+            "reals": 0
+          },
+          "dim": {
+            "nonnull": 2,
+            "text_blob_bytes": 0,
+            "integers": 2,
+            "reals": 0
+          },
+          "storage": {
+            "nonnull": 2,
+            "text_blob_bytes": 13,
+            "integers": 0,
+            "reals": 0
+          },
+          "state": {
+            "nonnull": 2,
+            "text_blob_bytes": 13,
+            "integers": 0,
+            "reals": 0
+          },
+          "created_at": {
+            "nonnull": 2,
+            "text_blob_bytes": 0,
+            "integers": 0,
+            "reals": 2
+          },
+          "completed_at": {
+            "nonnull": 1,
+            "text_blob_bytes": 0,
+            "integers": 0,
+            "reals": 1
+          }
+        }
+      },
+      "embedding_inputs": {
+        "rows": 26599,
+        "columns": {
+          "segment": {
+            "nonnull": 26599,
+            "text_blob_bytes": 0,
+            "integers": 26599,
+            "reals": 0
+          },
+          "input": {
+            "nonnull": 26599,
+            "text_blob_bytes": 41823844,
+            "integers": 0,
+            "reals": 0
+          },
+          "content_rev": {
+            "nonnull": 26599,
+            "text_blob_bytes": 851168,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "embedding_failures": {
+        "rows": 0,
+        "columns": {
+          "model": {
+            "nonnull": 0,
+            "text_blob_bytes": 0,
+            "integers": null,
+            "reals": null
+          },
+          "segment": {
+            "nonnull": 0,
+            "text_blob_bytes": 0,
+            "integers": null,
+            "reals": null
+          },
+          "reason": {
+            "nonnull": 0,
+            "text_blob_bytes": 0,
+            "integers": null,
+            "reals": null
+          },
+          "recorded_at": {
+            "nonnull": 0,
+            "text_blob_bytes": 0,
+            "integers": null,
+            "reals": null
+          }
+        }
+      },
+      "vectors": {
+        "rows": 26599,
+        "columns": {
+          "model": {
+            "nonnull": 26599,
+            "text_blob_bytes": 0,
+            "integers": 26599,
+            "reals": 0
+          },
+          "segment": {
+            "nonnull": 26599,
+            "text_blob_bytes": 0,
+            "integers": 26599,
+            "reals": 0
+          },
+          "content_rev": {
+            "nonnull": 26599,
+            "text_blob_bytes": 851168,
+            "integers": 0,
+            "reals": 0
+          },
+          "modality": {
+            "nonnull": 26599,
+            "text_blob_bytes": 108844,
+            "integers": 0,
+            "reals": 0
+          },
+          "vec": {
+            "nonnull": 26599,
+            "text_blob_bytes": 40856064,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      },
+      "embedding_modality_identities": {
+        "rows": 2,
+        "columns": {
+          "model": {
+            "nonnull": 2,
+            "text_blob_bytes": 0,
+            "integers": 2,
+            "reals": 0
+          },
+          "modality": {
+            "nonnull": 2,
+            "text_blob_bytes": 10,
+            "integers": 0,
+            "reals": 0
+          },
+          "identity": {
+            "nonnull": 2,
+            "text_blob_bytes": 128,
+            "integers": 0,
+            "reals": 0
+          }
+        }
+      }
+    },
+    "segments": [
+      [
+        "chunk",
+        "none",
+        4854,
+        null
+      ],
+      [
+        "chunk",
+        "text",
+        16003,
+        19301376
+      ],
+      [
+        "image",
+        "image",
+        912,
+        1271808
+      ],
+      [
+        "name",
+        "none",
+        4209,
+        null
+      ],
+      [
+        "ocr",
+        "none",
+        126,
+        null
+      ],
+      [
+        "page",
+        "none",
+        13,
+        null
+      ],
+      [
+        "page",
+        "text",
+        8148,
+        10828800
+      ],
+      [
+        "page_image",
+        "image",
+        1536,
+        2196480
+      ],
+      [
+        "tags",
+        "none",
+        912,
+        null
+      ]
+    ],
+    "vectors": [
+      [
+        2,
+        26599,
+        40856064
+      ]
+    ],
+    "fts_segments": 18,
+    "legacy_identical_to_active": [
+      0,
+      21874
+    ],
+    "input_exact_body_matches": [
+      0,
+      25485
+    ]
+  },
+  "column-bytes": {
+    "meta": {
+      "columns": {
+        "key": {
+          "value_bytes": 147,
+          "serial_type_bytes": 9,
+          "records": 9
+        },
+        "null": {
+          "value_bytes": 224,
+          "serial_type_bytes": 11,
+          "records": 9
+        }
+      },
+      "record_header_length_bytes": 9,
+      "total_record_bytes": 400
+    },
+    "sqlite_autoindex_meta_1": {
+      "columns": {
+        "key": {
+          "value_bytes": 147,
+          "serial_type_bytes": 9,
+          "records": 9
+        },
+        "<rowid>": {
+          "value_bytes": 8,
+          "serial_type_bytes": 9,
+          "records": 9
+        }
+      },
+      "record_header_length_bytes": 9,
+      "total_record_bytes": 182
+    },
+    "files": {
+      "columns": {
+        "id": {
+          "value_bytes": 0,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "path": {
+          "value_bytes": 481659,
+          "serial_type_bytes": 8252,
+          "records": 4209
+        },
+        "kind": {
+          "value_bytes": 15727,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "size": {
+          "value_bytes": 10095,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "mtime": {
+          "value_bytes": 33136,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "inode": {
+          "value_bytes": 16836,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "device": {
+          "value_bytes": 16836,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "state": {
+          "value_bytes": 17868,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "detail": {
+          "value_bytes": 5966,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "info": {
+          "value_bytes": 122332,
+          "serial_type_bytes": 4300,
+          "records": 4209
+        },
+        "indexed_at": {
+          "value_bytes": 33672,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        }
+      },
+      "record_header_length_bytes": 4209,
+      "total_record_bytes": 808769
+    },
+    "sqlite_autoindex_files_1": {
+      "columns": {
+        "path": {
+          "value_bytes": 481659,
+          "serial_type_bytes": 8252,
+          "records": 4209
+        },
+        "<rowid>": {
+          "value_bytes": 9578,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        }
+      },
+      "record_header_length_bytes": 4209,
+      "total_record_bytes": 507907
+    },
+    "segments": {
+      "columns": {
+        "id": {
+          "value_bytes": 0,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "file": {
+          "value_bytes": 83822,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "kind": {
+          "value_bytes": 177711,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "modality": {
+          "value_bytes": 149300,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "loc": {
+          "value_bytes": 33235,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "loc_end": {
+          "value_bytes": 0,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "excerpt": {
+          "value_bytes": 7348099,
+          "serial_type_bytes": 66950,
+          "records": 36713
+        },
+        "vec": {
+          "value_bytes": 33598464,
+          "serial_type_bytes": 58587,
+          "records": 36713
+        }
+      },
+      "record_header_length_bytes": 36713,
+      "total_record_bytes": 41773159
+    },
+    "fts_data": {
+      "columns": {
+        "id": {
+          "value_bytes": 0,
+          "serial_type_bytes": 15376,
+          "records": 15376
+        },
+        "block": {
+          "value_bytes": 60203106,
+          "serial_type_bytes": 30305,
+          "records": 15376
+        }
+      },
+      "record_header_length_bytes": 15376,
+      "total_record_bytes": 60264163
+    },
+    "fts_idx": {
+      "columns": {
+        "segid": {
+          "value_bytes": 14619,
+          "serial_type_bytes": 18953,
+          "records": 18953
+        },
+        "term": {
+          "value_bytes": 171763,
+          "serial_type_bytes": 18988,
+          "records": 18953
+        },
+        "pgno": {
+          "value_bytes": 37621,
+          "serial_type_bytes": 18953,
+          "records": 18953
+        }
+      },
+      "record_header_length_bytes": 18953,
+      "total_record_bytes": 299850
+    },
+    "fts_content": {
+      "columns": {
+        "id": {
+          "value_bytes": 0,
+          "serial_type_bytes": 34687,
+          "records": 34687
+        },
+        "c0": {
+          "value_bytes": 111320,
+          "serial_type_bytes": 34967,
+          "records": 34687
+        },
+        "c1": {
+          "value_bytes": 49747119,
+          "serial_type_bytes": 66975,
+          "records": 34687
+        },
+        "c2": {
+          "value_bytes": 5656984,
+          "serial_type_bytes": 38099,
+          "records": 34687
+        }
+      },
+      "record_header_length_bytes": 34687,
+      "total_record_bytes": 55724838
+    },
+    "fts_docsize": {
+      "columns": {
+        "id": {
+          "value_bytes": 0,
+          "serial_type_bytes": 34687,
+          "records": 34687
+        },
+        "sz": {
+          "value_bytes": 129305,
+          "serial_type_bytes": 34687,
+          "records": 34687
+        }
+      },
+      "record_header_length_bytes": 34687,
+      "total_record_bytes": 233366
+    },
+    "fts_config": {
+      "columns": {
+        "k": {
+          "value_bytes": 7,
+          "serial_type_bytes": 1,
+          "records": 1
+        },
+        "v": {
+          "value_bytes": 1,
+          "serial_type_bytes": 1,
+          "records": 1
+        }
+      },
+      "record_header_length_bytes": 1,
+      "total_record_bytes": 11
+    },
+    "embedding_models": {
+      "columns": {
+        "id": {
+          "value_bytes": 0,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "key": {
+          "value_bytes": 27,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "model": {
+          "value_bytes": 54,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "weights_sha256": {
+          "value_bytes": 64,
+          "serial_type_bytes": 3,
+          "records": 2
+        },
+        "build": {
+          "value_bytes": 104,
+          "serial_type_bytes": 3,
+          "records": 2
+        },
+        "prompts": {
+          "value_bytes": 59,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "preprocessing": {
+          "value_bytes": 180,
+          "serial_type_bytes": 3,
+          "records": 2
+        },
+        "dim": {
+          "value_bytes": 4,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "storage": {
+          "value_bytes": 13,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "state": {
+          "value_bytes": 13,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "created_at": {
+          "value_bytes": 16,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "completed_at": {
+          "value_bytes": 8,
+          "serial_type_bytes": 2,
+          "records": 2
+        }
+      },
+      "record_header_length_bytes": 2,
+      "total_record_bytes": 571
+    },
+    "sqlite_autoindex_embedding_models_1": {
+      "columns": {
+        "key": {
+          "value_bytes": 27,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "<rowid>": {
+          "value_bytes": 1,
+          "serial_type_bytes": 2,
+          "records": 2
+        }
+      },
+      "record_header_length_bytes": 2,
+      "total_record_bytes": 34
+    },
+    "embedding_inputs": {
+      "columns": {
+        "segment": {
+          "value_bytes": 0,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "input": {
+          "value_bytes": 41823844,
+          "serial_type_bytes": 53183,
+          "records": 26599
+        },
+        "content_rev": {
+          "value_bytes": 851168,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        }
+      },
+      "record_header_length_bytes": 26599,
+      "total_record_bytes": 42807992
+    },
+    "sqlite_autoindex_embedding_inputs_1": {
+      "columns": {
+        "segment": {
+          "value_bytes": 74959,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "content_rev": {
+          "value_bytes": 851168,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "<rowid>": {
+          "value_bytes": 74959,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        }
+      },
+      "record_header_length_bytes": 26599,
+      "total_record_bytes": 1107482
+    },
+    "embedding_failures": {
+      "columns": {
+        "model": {
+          "value_bytes": 0,
+          "serial_type_bytes": 0,
+          "records": 0
+        },
+        "segment": {
+          "value_bytes": 0,
+          "serial_type_bytes": 0,
+          "records": 0
+        },
+        "reason": {
+          "value_bytes": 0,
+          "serial_type_bytes": 0,
+          "records": 0
+        },
+        "recorded_at": {
+          "value_bytes": 0,
+          "serial_type_bytes": 0,
+          "records": 0
+        }
+      },
+      "record_header_length_bytes": 0,
+      "total_record_bytes": 0
+    },
+    "vectors": {
+      "columns": {
+        "model": {
+          "value_bytes": 26599,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "segment": {
+          "value_bytes": 74959,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "content_rev": {
+          "value_bytes": 851168,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "modality": {
+          "value_bytes": 108844,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "vec": {
+          "value_bytes": 40856064,
+          "serial_type_bytes": 53198,
+          "records": 26599
+        }
+      },
+      "record_header_length_bytes": 26599,
+      "total_record_bytes": 42103827
+    },
+    "embedding_modality_identities": {
+      "columns": {
+        "model": {
+          "value_bytes": 2,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "modality": {
+          "value_bytes": 10,
+          "serial_type_bytes": 2,
+          "records": 2
+        },
+        "identity": {
+          "value_bytes": 128,
+          "serial_type_bytes": 4,
+          "records": 2
+        }
+      },
+      "record_header_length_bytes": 2,
+      "total_record_bytes": 150
+    },
+    "files_inode": {
+      "columns": {
+        "device": {
+          "value_bytes": 16836,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "inode": {
+          "value_bytes": 16836,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "<rowid>": {
+          "value_bytes": 9578,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        }
+      },
+      "record_header_length_bytes": 4209,
+      "total_record_bytes": 60086
+    },
+    "files_state": {
+      "columns": {
+        "state": {
+          "value_bytes": 17868,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "kind": {
+          "value_bytes": 15727,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        },
+        "<rowid>": {
+          "value_bytes": 9578,
+          "serial_type_bytes": 4209,
+          "records": 4209
+        }
+      },
+      "record_header_length_bytes": 4209,
+      "total_record_bytes": 60009
+    },
+    "segments_file": {
+      "columns": {
+        "file": {
+          "value_bytes": 83822,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        },
+        "<rowid>": {
+          "value_bytes": 101443,
+          "serial_type_bytes": 36713,
+          "records": 36713
+        }
+      },
+      "record_header_length_bytes": 36713,
+      "total_record_bytes": 295404
+    },
+    "vectors_segment": {
+      "columns": {
+        "segment": {
+          "value_bytes": 74959,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        },
+        "model": {
+          "value_bytes": 26599,
+          "serial_type_bytes": 26599,
+          "records": 26599
+        }
+      },
+      "record_header_length_bytes": 26599,
+      "total_record_bytes": 181355
+    },
+    "sqlite_schema": {
+      "columns": {
+        "type": {
+          "value_bytes": 250,
+          "serial_type_bytes": 42,
+          "records": 42
+        },
+        "name": {
+          "value_bytes": 854,
+          "serial_type_bytes": 42,
+          "records": 42
+        },
+        "tbl_name": {
+          "value_bytes": 425,
+          "serial_type_bytes": 42,
+          "records": 42
+        },
+        "rootpage": {
+          "value_bytes": 21,
+          "serial_type_bytes": 42,
+          "records": 42
+        },
+        "sql": {
+          "value_bytes": 7040,
+          "serial_type_bytes": 75,
+          "records": 42
+        }
+      },
+      "record_header_length_bytes": 42,
+      "total_record_bytes": 8875
+    }
+  },
+  "source-sizes": {
+    "query-model.log": 379253,
+    "index.sqlite": 282574848,
+    "indexing-runtime.log": 210866,
+    "worker.log": 81705,
+    "index.sqlite-wal": 14619560,
+    "index.sqlite-shm": 32768,
+    "indexing.jsonl": 16178421,
+    "costs.json": 600
+  },
+  "storage": {
+    "baseline": {
+      "bytes": 282574848,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 7.116000022506341,
+        "p95_ms": 27.046875009546056,
+        "different_queries": 0,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 0.0
+      }
+    },
+    "layouts": {
+      "4096": {
+        "bytes": 321351680,
+        "rewrite_ms": 2353.522957972018,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 5.937040987191722,
+          "p95_ms": 24.541040998883545,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "vector_scan": {
+          "median_ms": 31.002229006844573,
+          "p95_ms": 31.402416992932558
+        },
+        "update": {
+          "committed_renames": 50,
+          "median_ms": 0.05733300349675119,
+          "p95_ms": 0.1760419982019812,
+          "wal_bytes_including_restores": 2315472,
+          "checkpoint": {
+            "median_ms": 1.244832994416356,
+            "p95_ms": 1.244832994416356
+          }
+        }
+      },
+      "8192": {
+        "bytes": 235814912,
+        "rewrite_ms": 2502.955000003567,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 6.441874982556328,
+          "p95_ms": 26.031167013570666,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "vector_scan": {
+          "median_ms": 20.3579999943031,
+          "p95_ms": 76.59641600912437
+        },
+        "update": {
+          "committed_renames": 50,
+          "median_ms": 0.0795619998825714,
+          "p95_ms": 0.4076249897480011,
+          "wal_bytes_including_restores": 3631504,
+          "checkpoint": {
+            "median_ms": 1.888333004899323,
+            "p95_ms": 1.888333004899323
+          }
+        }
+      },
+      "16384": {
+        "bytes": 223854592,
+        "rewrite_ms": 1649.0572089969646,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 6.430875015212223,
+          "p95_ms": 27.00187498703599,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "vector_scan": {
+          "median_ms": 24.401354501605965,
+          "p95_ms": 110.4512499878183
+        },
+        "update": {
+          "committed_renames": 50,
+          "median_ms": 0.06958299491088837,
+          "p95_ms": 0.3120840119663626,
+          "wal_bytes_including_restores": 6957024,
+          "checkpoint": {
+            "median_ms": 2.826582989655435,
+            "p95_ms": 2.826582989655435
+          }
+        }
+      },
+      "32768": {
+        "bytes": 220692480,
+        "rewrite_ms": 2077.140542009147,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 6.548000004841015,
+          "p95_ms": 24.658166017616168,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "vector_scan": {
+          "median_ms": 17.420542004401796,
+          "p95_ms": 18.579083000076935
+        },
+        "update": {
+          "committed_renames": 50,
+          "median_ms": 0.07887449464760721,
+          "p95_ms": 0.24270798894576728,
+          "wal_bytes_including_restores": 13608712,
+          "checkpoint": {
+            "median_ms": 2.852457982953638,
+            "p95_ms": 2.852457982953638
+          }
+        }
+      }
+    },
+    "fts": {
+      "rebuilt-full": {
+        "bytes": 223854592,
+        "rewrite_ms": 2685.332749999361,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 6.413458002498373,
+          "p95_ms": 25.03420799621381,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_content",
+            "bytes": 59392000
+          },
+          {
+            "name": "fts_data",
+            "bytes": 27557888
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 458752
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 98304
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "column": {
+        "bytes": 210288640,
+        "rewrite_ms": 2462.566083006095,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 83.71545799309388,
+          "p95_ms": 344.19562498806044,
+          "different_queries": 868,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 22.535234695179504
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_content",
+            "bytes": 59392000
+          },
+          {
+            "name": "fts_data",
+            "bytes": 14041088
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 458752
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 65536
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "none": {
+        "bytes": 202752000,
+        "rewrite_ms": 1996.65816599736,
+        "keyword": {
+          "queries": 64,
+          "median_ms": 31.358374500996433,
+          "p95_ms": 327.40812498377636,
+          "different_queries": 50,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 9.265374665896019
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_content",
+            "bytes": 59392000
+          },
+          {
+            "name": "fts_data",
+            "bytes": 6520832
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 458752
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 49152
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "prefix3": {
+        "bytes": 241319936,
+        "rewrite_ms": 3212.74720801739,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 5.848125001648441,
+          "p95_ms": 21.861332992557436,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_content",
+            "bytes": 59392000
+          },
+          {
+            "name": "fts_data",
+            "bytes": 45006848
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 458752
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 114688
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "prefix34": {
+        "bytes": 256933888,
+        "rewrite_ms": 4329.636458016466,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 5.8966669894289225,
+          "p95_ms": 26.14779199939221,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_content",
+            "bytes": 59392000
+          },
+          {
+            "name": "fts_data",
+            "bytes": 60604416
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 458752
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 131072
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "columnsize0": {
+        "bytes": 223395840,
+        "rewrite_ms": 3493.4502090036403,
+        "keyword": {
+          "queries": 64,
+          "median_ms": 31.808603991521522,
+          "p95_ms": 279.16862498386763,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_content",
+            "bytes": 59392000
+          },
+          {
+            "name": "fts_data",
+            "bytes": 27557888
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 98304
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "contentless": {
+        "bytes": 164511744,
+        "rewrite_ms": 2257.0745830016676,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 6.407125008990988,
+          "p95_ms": 26.48649999173358,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_inputs",
+            "bytes": 46186496
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_data",
+            "bytes": 27557888
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 524288
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 98304
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "segments",
+            "bytes": 42811392
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ]
+      },
+      "compressed-external": {
+        "bytes": 168869888,
+        "rewrite_ms": 3815.6857909925748,
+        "keyword": {
+          "queries": 1029,
+          "median_ms": 5.89716702234,
+          "p95_ms": 22.5673750101123,
+          "different_queries": 0,
+          "tie_order_only": 0,
+          "max_common_bm25_error": 0.0
+        },
+        "objects": [
+          {
+            "name": "embedding_failures",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_modality_identities",
+            "bytes": 16384
+          },
+          {
+            "name": "embedding_models",
+            "bytes": 16384
+          },
+          {
+            "name": "files",
+            "bytes": 868352
+          },
+          {
+            "name": "files_inode",
+            "bytes": 98304
+          },
+          {
+            "name": "files_state",
+            "bytes": 98304
+          },
+          {
+            "name": "fts_config",
+            "bytes": 16384
+          },
+          {
+            "name": "fts_data",
+            "bytes": 27557888
+          },
+          {
+            "name": "fts_docsize",
+            "bytes": 458752
+          },
+          {
+            "name": "fts_idx",
+            "bytes": 98304
+          },
+          {
+            "name": "keyword_payload",
+            "bytes": 28327936
+          },
+          {
+            "name": "meta",
+            "bytes": 16384
+          },
+          {
+            "name": "packed_embedding_inputs",
+            "bytes": 23363584
+          },
+          {
+            "name": "packed_segments",
+            "bytes": 41730048
+          },
+          {
+            "name": "segments_file",
+            "bytes": 425984
+          },
+          {
+            "name": "sqlite_autoindex_embedding_models_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_files_1",
+            "bytes": 540672
+          },
+          {
+            "name": "sqlite_autoindex_meta_1",
+            "bytes": 16384
+          },
+          {
+            "name": "sqlite_autoindex_packed_embedding_inputs_1",
+            "bytes": 1212416
+          },
+          {
+            "name": "sqlite_schema",
+            "bytes": 16384
+          },
+          {
+            "name": "vectors",
+            "bytes": 43614208
+          },
+          {
+            "name": "vectors_segment",
+            "bytes": 278528
+          }
+        ],
+        "logical_parity": {
+          "segments": true,
+          "embedding_inputs": true,
+          "vectors": true,
+          "files": true,
+          "fts": true
+        },
+        "integrity": "ok",
+        "foreign_key_violations": 0,
+        "update": {
+          "committed_renames": 50,
+          "median_ms": 0.11537550017237663,
+          "p95_ms": 0.25599999935366213,
+          "wal_bytes_including_restores": 8187624,
+          "checkpoint": {
+            "median_ms": 3.198499995050952,
+            "p95_ms": 3.198499995050952
+          }
+        }
+      }
+    },
+    "peak_rss_bytes": 179077120
+  },
+  "extra": {
+    "external-plain": {
+      "bytes": 223854592,
+      "rewrite_ms": 4510.052083001938,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 6.026084010954946,
+        "p95_ms": 24.91154201561585,
+        "different_queries": 0,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 0.0
+      }
+    },
+    "unicode61": {
+      "bytes": 224968704,
+      "rewrite_ms": 2588.982417015359,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 4.952166025759652,
+        "p95_ms": 21.15408398094587,
+        "different_queries": 695,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 16.5385853080219
+      }
+    },
+    "incremental": {
+      "bytes": 226983936,
+      "rewrite_ms": 749.7981659835204,
+      "bytes_after_optimize_before_vacuum": 282574848,
+      "free_before": 3392,
+      "free_after": 0,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 6.303083006059751,
+        "p95_ms": 26.12341698841192,
+        "different_queries": 0,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 0.0
+      },
+      "parity": {
+        "segments": true,
+        "embedding_inputs": true,
+        "vectors": true,
+        "files": true,
+        "fts": true
+      }
+    }
+  },
+  "vectors": {
+    "compression": {
+      "rows": 26599,
+      "raw_bytes": 40856064,
+      "zlib": {
+        "bytes_including_8byte_block_offsets": 36289594,
+        "encode_ms": 1024.3682920117863,
+        "decode": {
+          "median_ms": 93.956271011848,
+          "p95_ms": 120.52508399938233
+        },
+        "bit_identical": true
+      },
+      "zstd": {
+        "bytes_including_8byte_block_offsets": 35276167,
+        "encode_ms": 40.007167001022026,
+        "decode": {
+          "median_ms": 39.41545799898449,
+          "p95_ms": 45.67137497360818
+        },
+        "bit_identical": true
+      },
+      "shuffled-zstd": {
+        "bytes_including_8byte_block_offsets": 33719402,
+        "encode_ms": 49.30962499929592,
+        "decode": {
+          "median_ms": 81.19262500258628,
+          "p95_ms": 117.77399998391047
+        },
+        "bit_identical": true
+      },
+      "zlib-row": {
+        "bytes": 39690861,
+        "encode_ms": 1174.7771250084043
+      },
+      "zstd-row": {
+        "bytes": 39404974,
+        "encode_ms": 233.5359170101583
+      },
+      "sqlite_scan": {
+        "median_ms": 14.185666994308122,
+        "p95_ms": 14.809584012255073
+      },
+      "mmap_page_touch_only": {
+        "median_ms": 1.5773120103403926,
+        "p95_ms": 11.074000009102747
+      },
+      "sqlite_bytes": 44974080,
+      "packed_with_fixed_64byte_manifest_bytes": 42558400
+    },
+    "scoring": {
+      "coreai-all": {
+        "rows": 26599,
+        "scale_rows": 18560,
+        "queries": 512,
+        "startup_export_and_int8_ms": 390.46549997874536,
+        "mmap_payload_bytes": 40856064,
+        "int8_codes_and_scales_bytes": 20534428,
+        "int8_vs_exact": {
+          "segment_top20_changed": 441,
+          "file_top20_changed": 416,
+          "gate_flips": [
+            754,
+            4732,
+            2650
+          ],
+          "max_z_error": 0.12771327261199344
+        },
+        "f32_simd_vs_f64_exact": {
+          "segment_top20_changed": 1,
+          "file_top20_changed": 1,
+          "gate_flips": [
+            0,
+            0,
+            0
+          ],
+          "max_z_error": 8.772587083982764e-06
+        },
+        "prefilter_top20_miss_queries": {
+          "20": 146,
+          "64": 0,
+          "256": 0
+        },
+        "latency": {
+          "int8": {
+            "median_ms": 0.42335400939919055,
+            "p95_ms": 0.7904147976660169
+          },
+          "fp16": {
+            "median_ms": 4.5321045035962015,
+            "p95_ms": 4.8835667097591795
+          },
+          "fp16-f32": {
+            "median_ms": 1.9975835020886734,
+            "p95_ms": 2.2705104405758902
+          }
+        },
+        "migrated_selected_rows_bit_identical": true
+      },
+      "coreai-text-legacy-image": {
+        "rows": 26409,
+        "scale_rows": 18374,
+        "queries": 512,
+        "startup_export_and_int8_ms": 626.2072499957867,
+        "mmap_payload_bytes": 40564224,
+        "int8_codes_and_scales_bytes": 20387748,
+        "int8_vs_exact": {
+          "segment_top20_changed": 447,
+          "file_top20_changed": 420,
+          "gate_flips": [
+            810,
+            4564,
+            2332
+          ],
+          "max_z_error": 0.1293295747438103
+        },
+        "f32_simd_vs_f64_exact": {
+          "segment_top20_changed": 0,
+          "file_top20_changed": 0,
+          "gate_flips": [
+            0,
+            1,
+            0
+          ],
+          "max_z_error": 7.670173996221497e-06
+        },
+        "prefilter_top20_miss_queries": {
+          "20": 155,
+          "64": 0,
+          "256": 0
+        },
+        "latency": {
+          "int8": {
+            "median_ms": 0.45552100345958024,
+            "p95_ms": 0.8866921358276152
+          },
+          "fp16": {
+            "median_ms": 4.530312493443489,
+            "p95_ms": 5.285618762718514
+          },
+          "fp16-f32": {
+            "median_ms": 1.9975414907094091,
+            "p95_ms": 2.370829494611826
+          }
+        },
+        "migrated_selected_rows_bit_identical": true
+      }
+    },
+    "peak_rss_bytes": 364707840
+  },
+  "references": {
+    "bytes": 148275200,
+    "migration_ms": 5650.594415987143,
+    "references": {
+      "packed_embedding_inputs": [
+        [
+          "a",
+          23916,
+          1319986
+        ],
+        [
+          "r",
+          2,
+          65
+        ],
+        [
+          "z",
+          2681,
+          627828
+        ]
+      ],
+      "packed_segments": [
+        [
+          "r",
+          1225,
+          37758
+        ],
+        [
+          "s",
+          110,
+          1100
+        ],
+        [
+          "t",
+          3593,
+          46709
+        ],
+        [
+          "z",
+          26462,
+          4809045
+        ]
+      ]
+    },
+    "logical_parity": {
+      "segments": true,
+      "embedding_inputs": true,
+      "vectors": true,
+      "files": true,
+      "fts": true
+    },
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "objects": [
+      {
+        "name": "embedding_failures",
+        "bytes": 16384
+      },
+      {
+        "name": "embedding_modality_identities",
+        "bytes": 16384
+      },
+      {
+        "name": "embedding_models",
+        "bytes": 16384
+      },
+      {
+        "name": "files",
+        "bytes": 868352
+      },
+      {
+        "name": "files_inode",
+        "bytes": 98304
+      },
+      {
+        "name": "files_state",
+        "bytes": 98304
+      },
+      {
+        "name": "fts_config",
+        "bytes": 16384
+      },
+      {
+        "name": "fts_data",
+        "bytes": 27557888
+      },
+      {
+        "name": "fts_docsize",
+        "bytes": 458752
+      },
+      {
+        "name": "fts_idx",
+        "bytes": 98304
+      },
+      {
+        "name": "keyword_payload",
+        "bytes": 28327936
+      },
+      {
+        "name": "meta",
+        "bytes": 16384
+      },
+      {
+        "name": "packed_embedding_inputs",
+        "bytes": 3112960
+      },
+      {
+        "name": "packed_segments",
+        "bytes": 41402368
+      },
+      {
+        "name": "segments_file",
+        "bytes": 425984
+      },
+      {
+        "name": "sqlite_autoindex_embedding_models_1",
+        "bytes": 16384
+      },
+      {
+        "name": "sqlite_autoindex_files_1",
+        "bytes": 540672
+      },
+      {
+        "name": "sqlite_autoindex_meta_1",
+        "bytes": 16384
+      },
+      {
+        "name": "sqlite_autoindex_packed_embedding_inputs_1",
+        "bytes": 1212416
+      },
+      {
+        "name": "sqlite_schema",
+        "bytes": 16384
+      },
+      {
+        "name": "vectors",
+        "bytes": 43614208
+      },
+      {
+        "name": "vectors_segment",
+        "bytes": 278528
+      }
+    ],
+    "keyword": {
+      "queries": 1029,
+      "median_ms": 5.595957976765931,
+      "p95_ms": 23.068041016813368,
+      "different_queries": 0,
+      "tie_order_only": 0,
+      "max_common_bm25_error": 0.0
+    },
+    "update": {
+      "committed_renames": 50,
+      "median_ms": 0.0728544982848689,
+      "p95_ms": 0.1586250145919621,
+      "wal_bytes_including_restores": 8187624,
+      "checkpoint": {
+        "median_ms": 2.979332988616079,
+        "p95_ms": 2.979332988616079
+      }
+    }
+  },
+  "parity": {
+    "backend": {
+      "lifecycle": "original write schema retained",
+      "policies": {
+        "coreai-all": {
+          "queries": 512,
+          "rows": 26599,
+          "all_cosine_bits_equal": true,
+          "all_z_scores_and_gates_equal_by_identical_inputs": true,
+          "top_k_identical_for_all_k": true
+        },
+        "coreai-text-legacy-image": {
+          "queries": 512,
+          "rows": 26409,
+          "all_cosine_bits_equal": true,
+          "all_z_scores_and_gates_equal_by_identical_inputs": true,
+          "top_k_identical_for_all_k": true
+        }
+      }
+    },
+    "compressed": {
+      "lifecycle": {
+        "deleted_segments_in_rolled_back_file": 5,
+        "delete_with_integrity_check_ms": 1140.687542007072,
+        "source_change_invalidates_vectors_atomically": true,
+        "rollback_restores_vectors": true
+      },
+      "policies": {
+        "coreai-all": {
+          "queries": 512,
+          "rows": 26599,
+          "all_cosine_bits_equal": true,
+          "all_z_scores_and_gates_equal_by_identical_inputs": true,
+          "top_k_identical_for_all_k": true
+        },
+        "coreai-text-legacy-image": {
+          "queries": 512,
+          "rows": 26409,
+          "all_cosine_bits_equal": true,
+          "all_z_scores_and_gates_equal_by_identical_inputs": true,
+          "top_k_identical_for_all_k": true
+        }
+      }
+    },
+    "reference": {
+      "lifecycle": {
+        "deleted_segments_in_rolled_back_file": 5,
+        "delete_with_integrity_check_ms": 1178.5947080061305,
+        "source_change_invalidates_vectors_atomically": true,
+        "rollback_restores_vectors": true
+      },
+      "policies": {
+        "coreai-all": {
+          "queries": 512,
+          "rows": 26599,
+          "all_cosine_bits_equal": true,
+          "all_z_scores_and_gates_equal_by_identical_inputs": true,
+          "top_k_identical_for_all_k": true
+        },
+        "coreai-text-legacy-image": {
+          "queries": 512,
+          "rows": 26409,
+          "all_cosine_bits_equal": true,
+          "all_z_scores_and_gates_equal_by_identical_inputs": true,
+          "top_k_identical_for_all_k": true
+        }
+      }
+    },
+    "peak_rss_bytes": 313393152
+  },
+  "rust-parity": {
+    "queries": 32,
+    "rows": 26599,
+    "c_scores_bit_identical_to_actual_rust": true,
+    "python_z_scores_bit_identical_to_actual_rust": true,
+    "maximum_z_error": 0.0
+  },
+  "profile": {
+    "sqlite": {
+      "startup_ms": 345.1601669949014,
+      "peak_rss_bytes": 72187904.0,
+      "interpreter_import_peak_bytes": 35536896.0,
+      "increase_bytes": 36651008.0,
+      "scan_median_ms": 0.38795798900537193,
+      "scan_p95_ms": 0.4277348023606464,
+      "fresh_processes": 5
+    },
+    "compact": {
+      "startup_ms": 271.16766598192044,
+      "peak_rss_bytes": 72155136.0,
+      "interpreter_import_peak_bytes": 35536896.0,
+      "increase_bytes": 36634624.0,
+      "scan_median_ms": 0.34600001526996493,
+      "scan_p95_ms": 0.3909610473783687,
+      "fresh_processes": 5
+    },
+    "compressed": {
+      "startup_ms": 301.76370800472796,
+      "peak_rss_bytes": 72269824.0,
+      "interpreter_import_peak_bytes": 35536896.0,
+      "increase_bytes": 36798464.0,
+      "scan_median_ms": 0.39687499520368874,
+      "scan_p95_ms": 0.4330208059400318,
+      "fresh_processes": 5
+    },
+    "reference": {
+      "startup_ms": 301.75049998797476,
+      "peak_rss_bytes": 72171520.0,
+      "interpreter_import_peak_bytes": 35504128.0,
+      "increase_bytes": 36651008.0,
+      "scan_median_ms": 0.4178334929747507,
+      "scan_p95_ms": 0.4765771140228023,
+      "fresh_processes": 5
+    },
+    "sqlite-direct": {
+      "startup_ms": 138.08525001513772,
+      "peak_rss_bytes": 61865984.0,
+      "interpreter_import_peak_bytes": 35454976.0,
+      "increase_bytes": 26411008.0,
+      "scan_median_ms": 0.37395849358290434,
+      "scan_p95_ms": 0.431047250458505,
+      "fresh_processes": 5
+    },
+    "compact-direct": {
+      "startup_ms": 144.4310829974711,
+      "peak_rss_bytes": 61931520.0,
+      "interpreter_import_peak_bytes": 35504128.0,
+      "increase_bytes": 26427392.0,
+      "scan_median_ms": 0.3504164924379438,
+      "scan_p95_ms": 0.36168990482110525,
+      "fresh_processes": 5
+    },
+    "reference-direct": {
+      "startup_ms": 159.53879099106416,
+      "peak_rss_bytes": 62013440.0,
+      "interpreter_import_peak_bytes": 35569664.0,
+      "increase_bytes": 26460160.0,
+      "scan_median_ms": 0.39179198211058974,
+      "scan_p95_ms": 0.6375923083396625,
+      "fresh_processes": 5
+    },
+    "mmap-int8": {
+      "startup_ms": 24.974415980977938,
+      "peak_rss_bytes": 96452608.0,
+      "interpreter_import_peak_bytes": 35520512.0,
+      "increase_bytes": 60932096.0,
+      "scan_median_ms": 0.5010834865970537,
+      "scan_p95_ms": 0.7450500037521121,
+      "fresh_processes": 5
+    },
+    "mmap-fp16": {
+      "startup_ms": 5.221542000072077,
+      "peak_rss_bytes": 76021760.0,
+      "interpreter_import_peak_bytes": 35536896.0,
+      "increase_bytes": 40484864.0,
+      "scan_median_ms": 2.057562509435229,
+      "scan_p95_ms": 2.1378375065978616,
+      "fresh_processes": 5
+    }
+  },
+  "updates": {
+    "baseline": {
+      "iterations": 50,
+      "insert": {
+        "median_ms": 0.7673745130887255,
+        "p95_ms": 7.162624999182299
+      },
+      "delete": {
+        "median_ms": 0.8064789872150868,
+        "p95_ms": 4.00958297541365
+      },
+      "integrity": "ok",
+      "fk_violations": 0
+    },
+    "compact": {
+      "iterations": 50,
+      "insert": {
+        "median_ms": 0.6458334974013269,
+        "p95_ms": 3.283916012151167
+      },
+      "delete": {
+        "median_ms": 0.6586875097127631,
+        "p95_ms": 1.0090419964399189
+      },
+      "integrity": "ok",
+      "fk_violations": 0
+    },
+    "reference": {
+      "iterations": 50,
+      "insert": {
+        "median_ms": 0.7932290172902867,
+        "p95_ms": 4.4072080054320395
+      },
+      "delete": {
+        "median_ms": 0.8065414876909927,
+        "p95_ms": 4.4828749960288405
+      },
+      "integrity": "ok",
+      "fk_violations": 0
+    }
+  },
+  "loader": {
+    "baseline": {
+      "all": {
+        "rows": 26599,
+        "all_selected_fields_and_order_equal": true,
+        "materialized": {
+          "median_ms": 212.28304148826282,
+          "p95_ms": 275.07204201538116
+        },
+        "direct": {
+          "median_ms": 49.72416649980005,
+          "p95_ms": 52.998707978986204
+        },
+        "materialized_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "MATERIALIZE model_vectors",
+          "SEARCH vectors USING PRIMARY KEY (model=?)",
+          "SCAN v",
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "USE TEMP B-TREE FOR ORDER BY",
+          "RIGHT",
+          "SCAN s",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        "direct_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "SEARCH v USING PRIMARY KEY (model=?)",
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "RIGHT",
+          "SCAN s",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      },
+      "text": {
+        "rows": 26409,
+        "all_selected_fields_and_order_equal": true,
+        "materialized": {
+          "median_ms": 262.7049794973573,
+          "p95_ms": 721.8427080078982
+        },
+        "direct": {
+          "median_ms": 63.44208349764813,
+          "p95_ms": 92.70512501825579
+        },
+        "materialized_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "MATERIALIZE model_vectors",
+          "SEARCH vectors USING PRIMARY KEY (model=?)",
+          "SCAN v",
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "USE TEMP B-TREE FOR ORDER BY",
+          "RIGHT",
+          "SCAN s",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        "direct_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "SEARCH v USING PRIMARY KEY (model=?)",
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "RIGHT",
+          "SCAN s",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      }
+    },
+    "reference": {
+      "all": {
+        "rows": 26599,
+        "all_selected_fields_and_order_equal": true,
+        "materialized": {
+          "median_ms": 288.02522949990816,
+          "p95_ms": 607.97816698323
+        },
+        "direct": {
+          "median_ms": 51.64256248099264,
+          "p95_ms": 97.43075000005774
+        },
+        "materialized_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "MATERIALIZE model_vectors",
+          "SEARCH vectors USING PRIMARY KEY (model=?)",
+          "SCAN v",
+          "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "USE TEMP B-TREE FOR ORDER BY",
+          "RIGHT",
+          "SCAN t",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        "direct_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "SEARCH v USING PRIMARY KEY (model=?)",
+          "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "RIGHT",
+          "SCAN t",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      },
+      "text": {
+        "rows": 26409,
+        "all_selected_fields_and_order_equal": true,
+        "materialized": {
+          "median_ms": 233.80227100278717,
+          "p95_ms": 333.2502079720143
+        },
+        "direct": {
+          "median_ms": 56.39791600697208,
+          "p95_ms": 62.83949999487959
+        },
+        "materialized_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "MATERIALIZE model_vectors",
+          "SEARCH vectors USING PRIMARY KEY (model=?)",
+          "SCAN v",
+          "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "USE TEMP B-TREE FOR ORDER BY",
+          "RIGHT",
+          "SCAN t",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        "direct_plan": [
+          "MERGE (UNION ALL)",
+          "LEFT",
+          "SEARCH v USING PRIMARY KEY (model=?)",
+          "SEARCH t USING INTEGER PRIMARY KEY (rowid=?)",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)",
+          "RIGHT",
+          "SCAN t",
+          "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+        ]
+      }
+    }
+  },
+  "binary": {
+    "queries": 128,
+    "rows": 26599,
+    "sign_bytes": 2553504,
+    "median_ms": 0.08502049604430795,
+    "p95_ms": 0.1106915500713512,
+    "top20_miss_queries_by_candidate_count": {
+      "20": 125,
+      "64": 38,
+      "256": 4,
+      "1024": 1
+    },
+    "gate_flips": [
+      5419,
+      31554,
+      16116
+    ]
+  },
+  "validation": {
+    "backend": {
+      "retained_tables_identical": {
+        "files": true,
+        "segments": true,
+        "embedding_inputs": true,
+        "vectors": true,
+        "fts": true,
+        "embedding_models": true,
+        "embedding_failures": true,
+        "embedding_modality_identities": true
+      },
+      "metadata_identical_except_compaction_marker": true,
+      "sqlite_integrity": "ok",
+      "fts_integrity": "ok",
+      "fk_violations": 0,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 5.727125011617318,
+        "p95_ms": 22.628000006079674,
+        "different_queries": 0,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 0.0
+      }
+    },
+    "compressed": {
+      "retained_tables_identical": {
+        "files": true,
+        "segments": true,
+        "embedding_inputs": true,
+        "vectors": true,
+        "fts": true,
+        "embedding_models": true,
+        "embedding_failures": true,
+        "embedding_modality_identities": true
+      },
+      "metadata_identical_except_compaction_marker": true,
+      "sqlite_integrity": "ok",
+      "fts_integrity": "ok",
+      "fk_violations": 0,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 5.8029170031659305,
+        "p95_ms": 22.647540987236425,
+        "different_queries": 0,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 0.0
+      }
+    },
+    "reference": {
+      "retained_tables_identical": {
+        "files": true,
+        "segments": true,
+        "embedding_inputs": true,
+        "vectors": true,
+        "fts": true,
+        "embedding_models": true,
+        "embedding_failures": true,
+        "embedding_modality_identities": true
+      },
+      "metadata_identical_except_compaction_marker": true,
+      "sqlite_integrity": "ok",
+      "fts_integrity": "ok",
+      "fk_violations": 0,
+      "keyword": {
+        "queries": 1029,
+        "median_ms": 5.704666982637718,
+        "p95_ms": 22.693666978739202,
+        "different_queries": 0,
+        "tie_order_only": 0,
+        "max_common_bm25_error": 0.0
+      }
+    },
+    "resources": {
+      "final_free_disk_bytes": 23025336320,
+      "required_free_disk_bytes": 12884901888
+    }
+  },
+  "retired": {
+    "bytes": 116539392,
+    "removed_legacy_text_vectors": 19616,
+    "removed_payload_bytes": 30130176,
+    "selected_vector_rows_identical": {
+      "coreai-all": true,
+      "coreai-text-legacy-image": true
+    },
+    "restriction": "Core AI text selection only; legacy-text rollback is no longer supported without regeneration"
+  },
+  "wal": {
+    "64-short-readers": {
+      "transactions": 200,
+      "median_ms": 0.045541004510596395,
+      "p95_ms": 0.4632500058505684,
+      "peak_wal_bytes": 1099368,
+      "passive_before_reader_release": [
+        0,
+        44,
+        44
+      ],
+      "truncate_after_reader_release": {
+        "median_ms": 0.11683302000164986,
+        "p95_ms": 0.11683302000164986
+      }
+    },
+    "64-pinned": {
+      "transactions": 200,
+      "median_ms": 0.07072900189086795,
+      "p95_ms": 0.24699998903088272,
+      "peak_wal_bytes": 13372552,
+      "passive_before_reader_release": [
+        0,
+        815,
+        0
+      ],
+      "truncate_after_reader_release": {
+        "median_ms": 5.430959019577131,
+        "p95_ms": 5.430959019577131
+      }
+    },
+    "256-short-readers": {
+      "transactions": 200,
+      "median_ms": 0.0481664901599288,
+      "p95_ms": 0.09420799324288964,
+      "peak_wal_bytes": 4249704,
+      "passive_before_reader_release": [
+        0,
+        44,
+        44
+      ],
+      "truncate_after_reader_release": {
+        "median_ms": 0.12262500240467489,
+        "p95_ms": 0.12262500240467489
+      }
+    },
+    "256-pinned": {
+      "transactions": 200,
+      "median_ms": 0.06981249316595495,
+      "p95_ms": 0.1909589918795973,
+      "peak_wal_bytes": 13372552,
+      "passive_before_reader_release": [
+        0,
+        815,
+        0
+      ],
+      "truncate_after_reader_release": {
+        "median_ms": 3.8994580099824816,
+        "p95_ms": 3.8994580099824816
+      }
+    },
+    "1000-short-readers": {
+      "transactions": 200,
+      "median_ms": 0.0627705012448132,
+      "p95_ms": 0.2595830010250211,
+      "peak_wal_bytes": 13372552,
+      "passive_before_reader_release": [
+        0,
+        815,
+        815
+      ],
+      "truncate_after_reader_release": {
+        "median_ms": 0.2918750105891377,
+        "p95_ms": 0.2918750105891377
+      }
+    },
+    "1000-pinned": {
+      "transactions": 200,
+      "median_ms": 0.061521001043729484,
+      "p95_ms": 0.17458299407735467,
+      "peak_wal_bytes": 13372552,
+      "passive_before_reader_release": [
+        0,
+        815,
+        0
+      ],
+      "truncate_after_reader_release": {
+        "median_ms": 2.1081249869894236,
+        "p95_ms": 2.1081249869894236
+      }
+    }
+  }
+}

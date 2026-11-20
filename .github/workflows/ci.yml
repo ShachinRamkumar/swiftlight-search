@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  rust-backend:
+    name: Rust Backend (Test & Clippy)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: backend -> target
+
+      - name: Run Rust unit tests
+        run: cargo test --manifest-path backend/Cargo.toml --locked
+
+      - name: Run Clippy
+        run: cargo clippy --manifest-path backend/Cargo.toml --locked --all-targets -- -D warnings
+
+  macos-frontend:
+    name: macOS Frontend (Public API Compile & Unit Tests)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile public-API AppKit/SwiftUI frontend
+        run: bash build.sh --frontend-only
+
+      - name: Run standalone Swift frontend unit tests
+        run: |
+          swiftc -parse-as-library frontend/FolderAccess.swift scripts/test-access-flow.swift -o build.noindex/test-access-flow
+          ./build.noindex/test-access-flow
+          swiftc -parse-as-library frontend/PanelOpenPreparation.swift scripts/test-panel-open.swift -o build.noindex/test-panel-open
+          ./build.noindex/test-panel-open
+          swiftc -parse-as-library frontend/PendingOpen.swift scripts/test-pending-open.swift -o build.noindex/test-pending-open
+          ./build.noindex/test-pending-open
+
+  python-checks:
+    name: Python Codecs & Public Benchmark Verification
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Check Python syntax
+        run: |
+          python3 -m py_compile \
+            scripts/*.py \
+            scripts/tests/*.py \
+            research/document-inputs-public/*.py \
+            research/index-design/*.py \
+            research/combined-footprint/*.py
+
+      - name: Run offline storage & host-table unit tests
+        run: python3 -m unittest discover -s scripts/tests -p "test_*.py" -v
+
+      - name: Run SQLite index-codec unit tests
+        run: python3 -m unittest discover -s research/index-design -p "test_study.py" -v
+
+      - name: Verify committed ViDoRe benchmark & parity JSONs
+        run: python3 research/document-inputs-public/verify.py --results-only

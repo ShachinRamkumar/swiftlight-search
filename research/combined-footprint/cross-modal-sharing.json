@@ -1,0 +1,26 @@
+{
+ "function-assets/q32.aimodel & vision.aimodel": {
+  "shared_blobs": 0,
+  "shared_bytes": 0
+ },
+ "function-assets/q32.aimodel & audio.aimodel": {
+  "shared_blobs": 0,
+  "shared_bytes": 0
+ },
+ "vision.aimodel & audio.aimodel": {
+  "shared_blobs": 0,
+  "shared_bytes": 0
+ },
+ "function-assets/q32.aimodel": {
+  "blobs": 340,
+  "unique_bytes": 273541120
+ },
+ "vision.aimodel": {
+  "blobs": 178,
+  "unique_bytes": 304054272
+ },
+ "audio.aimodel": {
+  "blobs": 258,
+  "unique_bytes": 611218688
+ }
+}

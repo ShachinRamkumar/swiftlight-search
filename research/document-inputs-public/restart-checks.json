@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "completed_pages_surviving_interruption": 2,
+  "unfinished_pages": 1,
+  "inference_calls_after_restart": 5,
+  "expected_calls_after_restart": 5,
+  "completed_query_skipped": true,
+  "partial_file_ignored": true,
+  "completed_subset_skipped_without_model": true,
+  "note": "Synthetic persistence check only. No accuracy measurements or model inference."
+}

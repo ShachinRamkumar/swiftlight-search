@@ -1,0 +1,25 @@
+build.noindex/
+backend/target/
+vendor/DigUp/.build/
+vendor/DigUp/Vendor/*
+!vendor/DigUp/Vendor/hf-tokenizer/
+!vendor/DigUp/Vendor/libjpeg-turbo/
+vendor/DigUp/Vendor/hf-tokenizer/target/
+# Regenerate offline crates with:
+#   (cd vendor/DigUp/Vendor/hf-tokenizer && CARGO_NET_OFFLINE=false cargo vendor --locked crates)
+vendor/DigUp/Vendor/hf-tokenizer/crates/
+
+# Large model weights and binary host tables are prepared locally (not stored in Git)
+models/CoreAI/**/*.mlirb
+models/CoreAI/**/*.bf16
+models/CoreAI/**/*.f16
+models/CoreAI/**/*.f32
+models/CoreAI/**/*.f64
+models/CoreAI/tokenizer.json
+models/CoreAI/fingerprint.json
+
+# Local scratch, caches, and OS metadata
+verification/
+__pycache__/
+*.pyc
+.DS_Store

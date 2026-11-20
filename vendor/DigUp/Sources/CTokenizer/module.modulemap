@@ -1,0 +1,6 @@
+module CTokenizer [system] {
+    header "../../Vendor/hf-tokenizer/include/tokenizer.h"
+    link "digup_tokenizer"
+    link "iconv"
+    export *
+}

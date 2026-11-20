@@ -1,0 +1,16 @@
+[package]
+name = "digup-hf-tokenizer"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+
+[lib]
+name = "digup_tokenizer"
+crate-type = ["staticlib"]
+
+[dependencies]
+tokenizers = { version = "=0.23.2", default-features = false, features = ["fancy-regex"] }
+
+[profile.release]
+panic = "unwind"
+strip = "debuginfo"

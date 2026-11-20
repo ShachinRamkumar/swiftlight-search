@@ -1,0 +1,70 @@
+{
+  "device": "mps",
+  "dtype": "float32",
+  "torch": "2.15.0",
+  "transformers": "5.21.0",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "checks": [
+    {
+      "kind": "query",
+      "cosine_manual_vs_native": 1.0
+    },
+    {
+      "kind": "query",
+      "cosine_manual_vs_native": 1.0
+    },
+    {
+      "kind": "query",
+      "cosine_manual_vs_native": 1.0
+    },
+    {
+      "kind": "query",
+      "cosine_manual_vs_native": 1.0
+    },
+    {
+      "kind": "query",
+      "cosine_manual_vs_native": 0.9999999403953552
+    },
+    {
+      "kind": "document",
+      "cosine_manual_vs_native": 0.9999999403953552
+    },
+    {
+      "kind": "document",
+      "cosine_manual_vs_native": 1.0
+    },
+    {
+      "kind": "document",
+      "cosine_manual_vs_native": 1.0
+    },
+    {
+      "kind": "image",
+      "cosine_manual_vs_native": 0.9999999403953552,
+      "positions_equal": true,
+      "max_pixel_error": 0.003921627998352051,
+      "soft_tokens": 266,
+      "resized_shape": [
+        912,
+        672,
+        3
+      ]
+    },
+    {
+      "kind": "mixed",
+      "cosine_manual_vs_native": 0.9999999403953552
+    },
+    {
+      "kind": "image",
+      "cosine_manual_vs_native": 1.0,
+      "positions_equal": true,
+      "max_pixel_error": 0.003921627998352051,
+      "soft_tokens": 266,
+      "resized_shape": [
+        912,
+        672,
+        3
+      ]
+    }
+  ],
+  "production_CoreAI_parity": "pending external replay; these checks compare PyTorch paths only"
+}

@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "checks": [
+    "scalar meaning parity",
+    "population deviation floor",
+    "graded nDCG",
+    "multi-positive recall",
+    "rank-10 cutoff",
+    "V1 selection",
+    "paired bootstrap identity",
+    "image layout",
+    "fixed-point constant preservation",
+    "grapheme truncation"
+  ],
+  "image_shapes": [
+    {
+      "source": [
+        1400,
+        1000
+      ],
+      "target": [
+        912,
+        672
+      ],
+      "soft_tokens": 266
+    },
+    {
+      "source": [
+        1000,
+        1400
+      ],
+      "target": [
+        672,
+        912
+      ],
+      "soft_tokens": 266
+    },
+    {
+      "source": [
+        1,
+        5000
+      ],
+      "target": [
+        48,
+        13440
+      ],
+      "soft_tokens": 280
+    },
+    {
+      "source": [
+        5000,
+        1
+      ],
+      "target": [
+        13440,
+        48
+      ],
+      "soft_tokens": 280
+    },
+    {
+      "source": [
+        100,
+        100
+      ],
+      "target": [
+        768,
+        768
+      ],
+      "soft_tokens": 256
+    }
+  ]
+}

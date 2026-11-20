@@ -1,0 +1,59 @@
+{
+ "digup_model_bytes": 864676480,
+ "host_now": 346411818,
+ "host_lossless": 189363722,
+ "host_int8_token_table": 148197891,
+ "int8_estimates": {
+  "text_merged": 147269749,
+  "vision": 168038235,
+  "audio": 311321042,
+  "q32_measured": 138939186,
+  "saving_per_weight_byte": 0.4980074184093419
+ },
+ "unique_fp16_weight_bytes": 1188814080,
+ "options": {
+  "today: split sources + compiled cache, audio not compiled (measured)": {
+   "bytes": 4464094435,
+   "vs_digup": 3599417955,
+   "ratio_to_digup": 5.163
+  },
+  "earlier best: merged text, source-free, all modalities, raw hosts (measured)": {
+   "bytes": 1565079618,
+   "vs_digup": 700403138,
+   "ratio_to_digup": 1.81
+  },
+  "A: lossless text+image, audio downloaded only when enabled": {
+   "bytes": 792318858,
+   "vs_digup": -72357622,
+   "ratio_to_digup": 0.916
+  },
+  "A + audio enabled at FP16": {
+   "bytes": 1408031522,
+   "vs_digup": 543355042,
+   "ratio_to_digup": 1.628
+  },
+  "A + audio enabled at INT8 (audio estimate)": {
+   "bytes": 1103640081,
+   "vs_digup": 238963601,
+   "ratio_to_digup": 1.276
+  },
+  "B: 8-bit everything, all modalities resident (vision/audio/merged estimates)": {
+   "bytes": 774827460,
+   "vs_digup": -89849020,
+   "ratio_to_digup": 0.896
+  },
+  "C: lossless text+image, audio through macOS Speech + SoundAnalysis": {
+   "bytes": 792318858,
+   "vs_digup": -72357622,
+   "ratio_to_digup": 0.916
+  }
+ },
+ "excluded": [
+  "OS-managed ANE artifacts (not readable)",
+  "Metal shader cache (107 MB measured for the indexer, OS-purgeable)",
+  "search index",
+  "app bundle",
+  "temporary download/compile peaks",
+  "macOS speech assets for option C"
+ ]
+}

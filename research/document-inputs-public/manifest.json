@@ -1,0 +1,30 @@
+{
+  "base_commit": "f923fa487c47c246245db6710cb82a0320349436",
+  "model_revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+  "model_sha256": "197a32965d4b1105faf060417baa899e193fb73cd401f42ec9295234d5553d79",
+  "tokenizer_sha256": "4d777ef5bdc1aa36227abdfb77c3e49e7b9c892d16e1b6bda41c393504828be4",
+  "installed_production_tokenizer_matches": true,
+  "hardware": "Apple M1, MacBookPro17,1, 8 GiB RAM",
+  "device": "PyTorch MPS",
+  "dtype": "float32",
+  "text_padding_buckets": [
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "seed": 20261027,
+  "CoreAI_execution": false,
+  "Neural_Engine_execution": false,
+  "quantized_reference": false,
+  "run_started": "2026-11-03",
+  "cache_location": "~/.swiftlight-research/public-bench/",
+  "download_cap_bytes": 4000000000,
+  "free_disk_floor_bytes": 15032385536,
+  "protocol": "original-fp32-padded-v3-persistent",
+  "checkpoint_unit": "one page or one query, atomic and fsynced",
+  "previous_attempt": "October embeddings and datasets lost in reboot; no retrieval results reused",
+  "installed_tokenizer_match_observed_at": "2026-10-28",
+  "reference_sha256": "2cf4752cfbcc97d8ddf5cfec3c75beaa214e3ad91ce5c88e1fa258e1cefafe46"
+}

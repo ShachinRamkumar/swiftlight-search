@@ -1,0 +1,49 @@
+{
+ "documents": 10,
+ "doc_tokens_median": 1326,
+ "doc_unique_tokens_median": 492,
+ "queries": 8,
+ "today_mapped_bf16": {
+  "document": {
+   "median_ms": 0.135,
+   "max_ms": 0.244
+  },
+  "query": {
+   "median_ms": 0.003,
+   "max_ms": 0.005
+  }
+ },
+ "zstd_chunk64_lru0": {
+  "document": {
+   "median_ms": 39.889,
+   "max_ms": 63.912
+  },
+  "query": {
+   "median_ms": 0.558,
+   "max_ms": 0.95
+  },
+  "lru_memory_bytes": 0
+ },
+ "zstd_chunk16_lru0": {
+  "document": {
+   "median_ms": 28.878,
+   "max_ms": 44.681
+  },
+  "query": {
+   "median_ms": 0.396,
+   "max_ms": 0.679
+  },
+  "lru_memory_bytes": 0
+ },
+ "zstd_chunk16_lru4096": {
+  "document": {
+   "median_ms": 3.34,
+   "max_ms": 13.21
+  },
+  "query": {
+   "median_ms": 0.169,
+   "max_ms": 0.202
+  },
+  "lru_memory_bytes": 67108864
+ }
+}
